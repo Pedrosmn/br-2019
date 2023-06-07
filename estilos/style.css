@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+:root {
+    --cor1: #010221;
+    --cor2: #B7BF99;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -11,11 +16,11 @@ html {
 }
 
 body {
-    background-color: #B7BF99;
+    background-color: var(--cor2);
 }
 
 header.cabeca {
-    background-color: #010221;
+    background-color: var(--cor1);
     color: white;
     display: flex;
     justify-content: center;
@@ -33,7 +38,7 @@ h1.titulo-header {
 main {
     margin: auto;
     max-width: 800px;
-    border: 2px solid #010221;
+    background-color: var(--cor1);
     border-radius: 5px;
     padding: 20px;
 }
@@ -42,4 +47,34 @@ main {
     display: flex;
     gap: 50px;
     justify-content: center;
+    margin-bottom: 50px;
+}
+
+.tabela {
+    margin: auto;
+    max-width: 600px;
+    border-collapse: collapse;
+    border: 2px solid var(--cor2);
+    border-radius: 5px;
+    
+}
+
+.cabeca-tabela {
+    background-color: var(--cor1);
+    color: white;
+}
+
+table abbr {
+    text-decoration: none;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid var(--cor1);
+    overflow: hidden;
+    text-align: center;
+}
+
+tr.linha-dados {
+    background-color: #dde7b6;
 }
