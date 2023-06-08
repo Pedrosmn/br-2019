@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brasileirão 2019</title>
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/style.css" media="screen and (min-width: 890px)">
+    <link rel="stylesheet" href="estilos/mobile.css" media="screen and (max-width: 890px)">
 </head>
 <body>
     <header class="cabeca">
@@ -36,10 +37,20 @@
         </section>
         <section class="fundo-tabela">
             <table class="tabela">
+                <colgroup>
+                    <col class="cposicao">
+                    <col class="ctimes">
+                    <col class="cpontos">
+                    <col class="cjogos">
+                    <col class="cvitorias">
+                    <col class="cempates">
+                    <col class="cderrotas">
+                    <col class="csaldo">
+                </colgroup>
                 <thead class="cabeca-tabela">
                     <tr>
-                        <th scope="col">Posição</th>
-                        <th>Times</th>
+                        <th scope="col"><abbr title="Posição">POS</abbr></th>
+                        <th scope="col">Times</th>
                         <th scope="col"><abbr title="Pontos">PTS</abbr></th>
                         <th scope="col"><abbr title="Jogos">J</abbr></th>
                         <th scope="col"><abbr title="Vitórias">V</abbr></th>
@@ -251,7 +262,7 @@
                     </tr>
                 </tbody>
             </table>
-            <section class="recordes-flamengo">
+            <aside class="recordes-flamengo">
                 <h2 class="titulo-recordes">Recordes quebrados pelo Flamengo</h2>
                 <ul class="p-recordes">
                     <li>Maior pontuação: 90 pontos</li>
@@ -271,7 +282,7 @@
                     <li>1° campeão com técnico estrangeiro desde 1971</li>
                     <li>1° campeão a vencer a Libertadores desde 1971</li>
                 </ul>
-            </section>
+            </aside>
         </section>
     </main>
 
